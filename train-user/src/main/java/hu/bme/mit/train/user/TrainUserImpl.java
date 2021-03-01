@@ -7,6 +7,8 @@ public class TrainUserImpl implements TrainUser {
 
 	private void AwsomeFeatureMethod() { int a = 1+1;}
 
+	private void Error generation() {int b = 1+1;}
+
 	private TrainController controller;
 	private int joystickPosition;
 
