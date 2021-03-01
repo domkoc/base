@@ -2,12 +2,15 @@ package hu.bme.mit.train.user;
 
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainUser;
+import static org.junit.Assert.*;
 
 public class TrainUserImpl implements TrainUser {
 
-	private void AwsomeFeatureMethod() { int a = 1+1;}
+	public int a = 2;
 
-	private void Generate Error() {int = 1+1;}
+	public void AwsomeFeatureMethod() { this.a = 1+1;}
+
+	private void GenerateError() { int b = 1+1; }
 
 	private TrainController controller;
 	private int joystickPosition;
@@ -32,4 +35,11 @@ public class TrainUserImpl implements TrainUser {
 		controller.setJoystickPosition(joystickPosition);
 	}
 
+}
+
+public class TrainUserImplTest extends TestCase {
+	public void testDoSomething() {
+		TrainUserImpl impl = new TrainUserImpl();
+		assertEquals(impl.a, 2);
+	}
 }
