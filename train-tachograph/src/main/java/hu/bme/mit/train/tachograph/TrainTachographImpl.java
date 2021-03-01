@@ -3,7 +3,7 @@ import com.google.guava;
 
 public class TrainTachographImpl {
 
-	private Table<Integer, Integer, Integer> universityCourseSeatTable
+	public Table<Integer, Integer, Integer> tachographTable
 			= HashBasedTable.create();
 
 }
