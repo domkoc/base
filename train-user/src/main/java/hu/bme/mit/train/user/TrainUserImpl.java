@@ -5,6 +5,8 @@ import hu.bme.mit.train.interfaces.TrainUser;
 
 public class TrainUserImpl implements TrainUser {
 
+	private void AwsomeFeatureMethod() { int a = 1+1;}
+
 	private TrainController controller;
 	private int joystickPosition;
 
