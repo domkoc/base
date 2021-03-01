@@ -2,7 +2,6 @@ package hu.bme.mit.train.user;
 
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainUser;
-import static org.junit.Assert.*;
 
 public class TrainUserImpl implements TrainUser {
 
@@ -35,11 +34,4 @@ public class TrainUserImpl implements TrainUser {
 		controller.setJoystickPosition(joystickPosition);
 	}
 
-}
-
-public class TrainUserImplTest extends TestCase {
-	public void testDoSomething() {
-		TrainUserImpl impl = new TrainUserImpl();
-		assertEquals(impl.a, 2);
-	}
 }
