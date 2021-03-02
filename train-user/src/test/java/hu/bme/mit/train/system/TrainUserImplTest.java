@@ -1,4 +1,7 @@
+package hu.bme.mit.train.system;
+
 import org.junit.Test;
+import org.junit.Assert;
 
 public class SimpleTest {
 
